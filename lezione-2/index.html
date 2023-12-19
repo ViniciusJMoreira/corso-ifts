@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lezione 2</title>
+</head>
+<body>
+    <!-- TAG SEMANTICI -->
+    <h1 id="title">Questo è il titulo principale della pagina</h1>
+    <h2>Il primo sottotitolo</h2>
+    <h3>il sotto sotto titulo 1</h3>
+    <p>
+        <strong>Lorem ipsum</strong> dolor sit, amet consectetur adipisicing elit. Mollitia consequuntur quibusdam sint consequatur neque aspernatur nobis <em>accusamus tempore doloribus vero</em>, ut nostrum voluptatum provident ipsam aliquam vitae dolore beatae nulla, obcaecati, dicta recusandae error? Esse quasi, ab aut officia iste exercitationem laudantium nostrum, temporibus distinctio vitae voluptas, sequi consequuntur alias.
+    </p>
+    <h3>il sotto sotto titulo 2</h3>
+    <h2>il secondo sottotitulo</h2>
+    <blockquote>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In tenetur at eius eaque optio harum minima laudantium, minus asperiores tempora debitis inventore, exercitationem, explicabo sapiente. Soluta, vel nihil? Recusandae, eveniet.</p>
+        <cite>Vinicius Moreira</cite>
+    </blockquote>
+    <h2>il terzo sottotitulo un testo ad <sup>apice</sup> e uno a <sub>pedice</sub></h2>
+    <p>
+        <cite>citazoine</cite>
+        <abbr title="enaip ente nazionale italiano">ENAIP</abbr>
+    </p>
+
+    <h2>il quarto sottotitulo</h2>
+
+    <code> 
+        il tag h1 è un titolo principale
+    </code>
+
+    <code>
+        <pre>
+            Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Esse, fugiat error possimus perspiciatis, ab voluptatibus 
+            nam nobis minus natus nisi similique 
+            
+            facere fuga tempora temporibus distinctio
+            eligendi tenetur voluptatem assumenda?
+        </pre>
+    </code>
+
+    <del>testo cancellato</del>
+    <ins>testo inserito</ins>
+    <mark>testo evidenziato</mark>
+    <time datetime="2023-12-14">2023-12-14</time>
+    <small>testo di dimensione inferiore</small>
+    
+    <address>
+        Rossi s.r.l via della repubblica, 54 - 47921
+        Rimini (RN)
+    </address>
+
+    <p> il tag &lt;pre&gt; &copy; consente di preformattare un testo</p>
+
+    <menu>
+        <li>Home</li>
+        <li>Chi siamo</li>
+        <li>Contatti</li>
+    </menu>
+
+    <div id="primaColonna">
+        <div>
+            immagine Banner
+        </div><!--Chiude banner-->
+        <h2>Testo Banner</h2>
+    </div> <!--chiudo primaCollona -->
+
+    <div>
+        <h2>Liste</h2>
+        <h3>Liste ordinate</h3>
+        <div>
+            <ol> <!-- Ordered List -->
+                <li>Punto 1</li>
+                <li>Punto 2</li>
+                <li>Punto 3</li>
+            </ol>
+        </div>
+        <h3>Liste Non Ordinate</h3>
+        <div>
+            <ul style="list-style-type: lower-greek;"> <!-- Unordered List -->
+                <li>
+                    <ol>
+                        <li>Punto 1</li>
+                        <li>Punto 2</li>
+                        <li>Punto 3</li>
+                    </ol>
+                </li>
+                <li>Punto 2</li>
+                <li>Punto 3</li>
+            </ul>
+        </div>
+        <h3>Liste di definizione</h3>
+        <div>
+            <dl> <!-- Definition List -->
+                <dt>chatgpt</dt>
+                <dd>intelligenza artificiale di openai microsoft</dd>
+                <dt>Bard</dt>
+                <dd>intelligenza artficiale di google</dd>
+            </dl>
+        </div>
+    </div>
+
+    <h2>Tabella</h2>
+    <table style="color: #fff;">
+        <caption>Titulo della tabella</caption>
+        <colgroup>
+            <col span="2" style="background-color: rgb(84, 99, 0);">
+            <col span="1" style="background-color: rgb(28, 24, 85);">
+            <col span="1" style="background-color: rgb(146, 81, 81);">
+            
+        </colgroup>
+        <thead> <!--Table head-->
+            <th>Tipo di fornitore</th>  <!--Table header-->
+            <th>Nome di fornitore</th>
+            <th>Servizio</th>
+            <th>Costo</th>
+        </thead>
+        <tbody>
+            <tr> <!--Table Row-->
+                <td rowspan="3">Hosting</td> <!--Table Data-->
+                <td>Aruba</td>
+                <td>Hosting Base Linux</td>
+                <td>29.90</td>
+            </tr>
+            <tr>
+                <td>OVH</td>
+                <td>Server Managed</td>
+                <td>350,00</td>
+            </tr>
+            <tr>
+                <td>Siteground</td>
+                <td>Cloud Hosting</td>
+                <td>200,00</td>
+            </tr>
+            <tfoot>
+                <tr style="background-color: rgb(0, 94, 55);">
+                    <td colspan="3">Media di Costo</td>
+                    <td>193,30</td>
+                </tr>
+            </tfoot>
+        </tbody>
+    </table>
+    <br>
+    <a href="#title">Back to Up</a>
+</body>
+</html>
