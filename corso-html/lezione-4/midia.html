@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lezione 4</title>
+    <title>Audio, Video e Map</title>
 </head>
 <body>
-    <h1>Audio e Video</h1>
+    <h1>Audio, Video Map</h1>
     <nav>
         <menu id="menu">
             <li><a href="#audio">Audio</a></li>
             <li><a href="#video">Video</a></li>
+            <li><a href="#mapa-italia">Mapa Italia</a></li>
         </menu>
     </nav>
     <main>
@@ -20,6 +21,13 @@
         <section>
             <video id="video" src="./assets/4Spot.mp4" controls width="500px" loop poster="./assets/logo.jpg"></video>
         </section>
+        <div id="mapa-italia">
+            <img src="./assets/italy-map-provinces-0.jpg" usemap="#image-map">
+
+        <map name="image-map">
+            <area target="_blank" alt="Mapa Italia" title="Emilia-Romagna" href="https://it.wikipedia.org/wiki/Comuni_dell%27Emilia-Romagna" coords="131,134,135,118,151,122,187,127,212,127,228,123,238,131,238,158,247,171,255,176,232,184,219,172,206,165,188,171,155,156,142,158,134,151,124,144" shape="poly">
+        </map>
+        </div>
     </main>
     <footer>
         <p>Realizzato da <cite><strong>Enaip</strong></cite></p>
