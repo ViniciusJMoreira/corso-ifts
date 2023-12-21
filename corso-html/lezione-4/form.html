@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +7,29 @@
 </head>
 <body>
     <h1>Form</h1>
-    <form name="login" action="http://localhost/login-php" method="post" enctype="multipart/form-data">
+    <form name="login" action="http://localhost/linguaggio-markup/form/login.php" method="POST" enctype="multipart/form-data">
         <label for="utente">Utente:</label><br>
-        <input type="text" id="utente"> <br><br>
+        <input type="text" name="utente" id="utente"> <br><br>
         <label for="password">Password:</label><br>
-        <input type="password" name="password" id="password">
+        <input type="password" name="password" id="password"> <br><br>
+        <button type="submit">Send</button>
     </form>
-</body>
+    <h2>Registrati</h2>
+    <form name="registrati" action="registrati.php" 
+    method="POST" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Dati Anagrafici</legend>
+            <label for="nome">Nome:</label><br>
+            <input type="text" name="nome" id="nome" value="Vinicius"><br><br>
+            <label for="codice-fiscale">Codice  Fiscale:</label><br>
+            <input type="text" name="codice-fiscale" id="codice-fiscale" maxlength="16" size="16" placeholder="Codice Fiscale"><br><br>
+            <button type="submit">Send</button>
+        </fieldset>
+        <fieldset>
+            <legend>Preferenze</legend>
+            <label for="motto">Il tuo Motto:</label> <br>
+            <textarea name="motto" id="motto" cols="30" rows="10" placeholder="Aggiungi una nota..."></textarea><br>
+            <button type="submit">Send</button>
+        </fieldset>
+    </form>
 </html>
