@@ -1,0 +1,108 @@
+inzio
+
+firstNumber <= 10;
+lastNumber <= 25;
+
+-> print lastNumber + lastNumber;
+
+fine
+
+inzio
+
+minuti <= 3;
+secondi <= minuti * 60;
+-> print secondi;
+
+fine
+
+inizio
+
+baseTriangolo <= 10;
+altezzaTriangolo <= 10;
+areaTriagolo <= (baseTriangolo*altezzaTriangolo)/2;
+-> print areaTriangolo;
+
+fine
+
+inizio
+
+positiviNumber <= -2;
+
+se firstNumber è positivo
+    -> print positiviNumber;
+
+fine
+
+inizio
+
+A = 5;
+B = 10;
+
+SE A > B
+    -> print A;
+ALTRIMENTI
+    -> print B;
+
+fine
+
+inzio
+
+number <= 10, 20, 15, 25;
+numberMax <= number;
+elemento <= number;
+
+per ogni elemento number > numberMax
+    numberMax <= number[elemento]
+    elemento <= elemento
+
+-> print numberMax e elemento
+
+fine
+
+inizio
+
+mese = 5;
+
+qualore mese
+    caso 1 -> print gennaio
+    caso 2 -> print febbraio
+    caso 3 -> print marzo
+    caso 4 -> print aprile
+    caso 5 -> print maggio
+    caso 6 -> print giugno
+    caso 7 -> print luglio
+    caso 8 -> print agosto
+    caso 9 -> print settembre
+    caso 10 -> print ottobre
+    caso 11 -> print novembre
+    caso 12 -> print dicembre
+    oppure -> print numero non valido.
+
+fine
+
+inizio
+
+numbers <= [0 , 5 , 8 , 10];
+totalPositiveNumber <= 0;
+
+per ogni elemento number
+    se number nella posizione elemento é > 0
+        totalPositiveNumber + 1;
+
+-> print totalPositiveNumber;
+
+fine
+
+inizio
+
+nome <= 'Vinicius';
+cognome <= 'Moreira';
+
+se la lunghezza di nome > cognome
+    -> print nome
+oppure se la lunghezza di cognome > nome
+    -> print cognome
+oppure se la lunghezza nome = cognome
+    -> print nome + cognome hanno la stessa lunghezza
+
+fine
